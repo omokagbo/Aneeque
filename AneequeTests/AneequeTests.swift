@@ -2,7 +2,7 @@
 //  AneequeTests.swift
 //  AneequeTests
 //
-//  Created by Decagon on 24/10/2021.
+//  Created by Emmanuel Omokagbo on 24/10/2021.
 //
 
 import XCTest

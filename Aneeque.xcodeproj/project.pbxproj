@@ -3,19 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		B41D90902724DB1C0045A440 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41D908F2724DB1C0045A440 /* AppDelegate.swift */; };
 		B41D90922724DB1C0045A440 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41D90912724DB1C0045A440 /* SceneDelegate.swift */; };
-		B41D90942724DB1C0045A440 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41D90932724DB1C0045A440 /* ViewController.swift */; };
-		B41D90972724DB1C0045A440 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B41D90952724DB1C0045A440 /* Main.storyboard */; };
 		B41D90992724DB200045A440 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B41D90982724DB200045A440 /* Assets.xcassets */; };
 		B41D909C2724DB200045A440 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B41D909A2724DB200045A440 /* LaunchScreen.storyboard */; };
 		B41D90A72724DB200045A440 /* AneequeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41D90A62724DB200045A440 /* AneequeTests.swift */; };
 		B41D90B12724DB200045A440 /* AneequeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41D90B02724DB200045A440 /* AneequeUITests.swift */; };
 		B41D90B32724DB200045A440 /* AneequeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41D90B22724DB200045A440 /* AneequeUITestsLaunchTests.swift */; };
+		B41D90C32724E5800045A440 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B41D90C22724E57F0045A440 /* Main.storyboard */; };
+		B41D90C52724E58C0045A440 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41D90C42724E58B0045A440 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +39,6 @@
 		B41D908C2724DB1C0045A440 /* Aneeque.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aneeque.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B41D908F2724DB1C0045A440 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B41D90912724DB1C0045A440 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B41D90932724DB1C0045A440 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B41D90962724DB1C0045A440 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B41D90982724DB200045A440 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B41D909B2724DB200045A440 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B41D909D2724DB200045A440 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +47,8 @@
 		B41D90AC2724DB200045A440 /* AneequeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AneequeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B41D90B02724DB200045A440 /* AneequeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AneequeUITests.swift; sourceTree = "<group>"; };
 		B41D90B22724DB200045A440 /* AneequeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AneequeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B41D90C22724E57F0045A440 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		B41D90C42724E58B0045A440 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +99,11 @@
 		B41D908E2724DB1C0045A440 /* Aneeque */ = {
 			isa = PBXGroup;
 			children = (
-				B41D908F2724DB1C0045A440 /* AppDelegate.swift */,
-				B41D90912724DB1C0045A440 /* SceneDelegate.swift */,
-				B41D90932724DB1C0045A440 /* ViewController.swift */,
-				B41D90952724DB1C0045A440 /* Main.storyboard */,
-				B41D90982724DB200045A440 /* Assets.xcassets */,
-				B41D909A2724DB200045A440 /* LaunchScreen.storyboard */,
-				B41D909D2724DB200045A440 /* Info.plist */,
+				B41D90BF2724DE6E0045A440 /* App + Scene Delegate */,
+				B41D90C02724DEA20045A440 /* Launch Screen */,
+				B41D90C72724E5CF0045A440 /* Views */,
+				B41D90C62724E5AE0045A440 /* Controllers */,
+				B41D90C12724DEBB0045A440 /* Resources */,
 			);
 			path = Aneeque;
 			sourceTree = "<group>";
@@ -125,6 +123,48 @@
 				B41D90B22724DB200045A440 /* AneequeUITestsLaunchTests.swift */,
 			);
 			path = AneequeUITests;
+			sourceTree = "<group>";
+		};
+		B41D90BF2724DE6E0045A440 /* App + Scene Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				B41D908F2724DB1C0045A440 /* AppDelegate.swift */,
+				B41D90912724DB1C0045A440 /* SceneDelegate.swift */,
+			);
+			path = "App + Scene Delegate";
+			sourceTree = "<group>";
+		};
+		B41D90C02724DEA20045A440 /* Launch Screen */ = {
+			isa = PBXGroup;
+			children = (
+				B41D909A2724DB200045A440 /* LaunchScreen.storyboard */,
+			);
+			path = "Launch Screen";
+			sourceTree = "<group>";
+		};
+		B41D90C12724DEBB0045A440 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B41D90982724DB200045A440 /* Assets.xcassets */,
+				B41D909D2724DB200045A440 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B41D90C62724E5AE0045A440 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B41D90C42724E58B0045A440 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B41D90C72724E5CF0045A440 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B41D90C22724E57F0045A440 /* Main.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,7 +247,7 @@
 				};
 			};
 			buildConfigurationList = B41D90872724DB1C0045A440 /* Build configuration list for PBXProject "Aneeque" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -231,9 +271,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B41D90C32724E5800045A440 /* Main.storyboard in Resources */,
 				B41D909C2724DB200045A440 /* LaunchScreen.storyboard in Resources */,
 				B41D90992724DB200045A440 /* Assets.xcassets in Resources */,
-				B41D90972724DB1C0045A440 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B41D90942724DB1C0045A440 /* ViewController.swift in Sources */,
+				B41D90C52724E58C0045A440 /* ViewController.swift in Sources */,
 				B41D90902724DB1C0045A440 /* AppDelegate.swift in Sources */,
 				B41D90922724DB1C0045A440 /* SceneDelegate.swift in Sources */,
 			);
@@ -297,14 +337,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B41D90952724DB1C0045A440 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B41D90962724DB1C0045A440 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B41D909A2724DB200045A440 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -367,7 +399,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -422,7 +454,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -441,7 +473,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FR92VWWUNN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Aneeque/Info.plist;
+				INFOPLIST_FILE = Aneeque/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -469,7 +501,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FR92VWWUNN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Aneeque/Info.plist;
+				INFOPLIST_FILE = Aneeque/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
