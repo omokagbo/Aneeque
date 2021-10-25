@@ -26,6 +26,8 @@ class ItemTableViewCell: UITableViewCell {
     
     // MARK: - Outlets
     
+    @IBOutlet weak var containerView: UIView!
+    
     @IBOutlet weak var likeButton: UIButton!
     
     @IBOutlet weak var itemImage: UIImageView!
@@ -46,6 +48,7 @@ class ItemTableViewCell: UITableViewCell {
         super.awakeFromNib()
         selectionStyle = .none
         likeButton.setTitle("", for: .normal)
+        self.createCardView(viewName: containerView)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -70,8 +73,12 @@ class ItemTableViewCell: UITableViewCell {
         return UINib(nibName: "ItemTableViewCell", bundle: nil)
     }
     
-    public func setup() {
-        
+    public func setup(with model: Item) {
+        itemImage.image = UIImage(named: model.itemImage)
+        itemName.text = model.itemName
+        sellerName.text = model.itemSeller
+        summary.text = model.itemDescription
+        price.text = model.itemPrice
     }
     
 }

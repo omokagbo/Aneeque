@@ -25,6 +25,9 @@ class BaseTabBarController: UITabBarController, UITabBarControllerDelegate {
         let fourthTabBar = UIStoryboard(name: "Profile", bundle: nil).instantiateViewController(withIdentifier: "ProfileViewController")
         
         firstTabBar.navigationItem.largeTitleDisplayMode = .always
+        secondTabBar.navigationItem.largeTitleDisplayMode = .always
+        thirdTabBar.navigationItem.largeTitleDisplayMode = .always
+        fourthTabBar.navigationItem.largeTitleDisplayMode = .always
         
         let firstNavBar = UINavigationController(rootViewController: firstTabBar)
         let secondNavBar = UINavigationController(rootViewController: secondTabBar)
@@ -36,9 +39,9 @@ class BaseTabBarController: UITabBarController, UITabBarControllerDelegate {
         fourthNavBar.tabBarItem = UITabBarItem(title: nil, image: UIImage(systemName: "person.fill"), tag: 3)
         
         firstNavBar.navigationBar.prefersLargeTitles = true
-        secondNavBar.navigationBar.prefersLargeTitles = false
-        thirdNavBar.navigationBar.prefersLargeTitles = false
-        fourthNavBar.navigationBar.prefersLargeTitles = false
+        secondNavBar.navigationBar.prefersLargeTitles = true
+        thirdNavBar.navigationBar.prefersLargeTitles = true
+        fourthNavBar.navigationBar.prefersLargeTitles = true
         
         setViewControllers([firstNavBar, secondNavBar, thirdNavBar, fourthNavBar], animated: true)
         tabBar.backgroundColor = .white

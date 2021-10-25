@@ -19,7 +19,21 @@ class HomeViewController: UIViewController {
         return searchImage
     }()
     
-    var isSelected = false
+    var allButtonIsSelected = false
+    
+    var chairButtonIsSelected = false
+    
+    var tableButtonIsSelected = false
+    
+    var lampButtonIsSelected = false
+    
+    var floorButtonIsSelected = false
+    
+    private var itemViewModel: ItemViewModel = ItemViewModel()
+    
+    private let customColor = UIColor(red: 64/255, green: 59/255, blue: 88/255, alpha: 1)
+    
+    private var items = [Item]()
     
     // MARK: - Outlets
     
@@ -48,23 +62,78 @@ class HomeViewController: UIViewController {
     // MARK: - Actions
     
     @IBAction func didTapAllButton() {
-        print("all button tapped")
+        allButtonIsSelected = !allButtonIsSelected
+        if allButtonIsSelected {
+            allButton.backgroundColor = customColor
+            allButton.tintColor = .white
+        } else {
+            allButton.backgroundColor = .white
+            allButton.tintColor = customColor
+        }
+        chairButton.isSelected = false
+        tableButton.isSelected = false
+        lampButton.isSelected = false
+        floorButton.isSelected = false
     }
     
     @IBAction func didTapChairButton() {
-        print("chair button tapped")
+        chairButtonIsSelected = !chairButtonIsSelected
+        if chairButtonIsSelected {
+            chairButton.backgroundColor = customColor
+            chairButton.tintColor = .white
+        } else {
+            chairButton.backgroundColor = .white
+            chairButton.tintColor = customColor
+        }
+        allButton.isSelected = false
+        tableButton.isSelected = false
+        lampButton.isSelected = false
+        floorButton.isSelected = false
     }
     
     @IBAction func didTapTableButton() {
-        print("table button tapped")
+        tableButtonIsSelected = !tableButtonIsSelected
+        if tableButtonIsSelected {
+            tableButton.backgroundColor = customColor
+            tableButton.tintColor = .white
+        } else {
+            tableButton.backgroundColor = .white
+            tableButton.tintColor = customColor
+        }
+        allButton.isSelected = false
+        chairButton.isSelected = false
+        lampButton.isSelected = false
+        floorButton.isSelected = false
     }
     
     @IBAction func didTapLampButton() {
-        print("lamp button tapped")
+        lampButtonIsSelected = !lampButtonIsSelected
+        if lampButtonIsSelected {
+            lampButton.backgroundColor = customColor
+            lampButton.tintColor = .white
+        } else {
+            lampButton.backgroundColor = .white
+            lampButton.tintColor = customColor
+        }
+        allButton.isSelected = false
+        chairButton.isSelected = false
+        tableButton.isSelected = false
+        floorButton.isSelected = false
     }
     
     @IBAction func didTapFloorButton() {
-        print("floor button tapped")
+        floorButtonIsSelected = !floorButtonIsSelected
+        if floorButtonIsSelected {
+            floorButton.backgroundColor = customColor
+            floorButton.tintColor = .white
+        } else {
+            floorButton.backgroundColor = .white
+            floorButton.tintColor = customColor
+        }
+        allButton.isSelected = false
+        chairButton.isSelected = false
+        tableButton.isSelected = false
+        lampButton.isSelected = false
     }
     
     // MARK: - Methods
@@ -72,6 +141,7 @@ class HomeViewController: UIViewController {
     private func setupSearchField() {
         searchField.leftViewMode = .always
         searchField.leftView = searchImage
+        searchField.delegate = self
     }
     
     private func setupTableView() {
@@ -87,7 +157,7 @@ class HomeViewController: UIViewController {
 extension HomeViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        itemViewModel.allItems.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -95,6 +165,9 @@ extension HomeViewController: UITableViewDataSource {
             return UITableViewCell()
         }
         cell.delegate = self
+        
+        cell.setup(with: itemViewModel.allItems[indexPath.row])
+        
         return cell
     }
 }
@@ -102,10 +175,26 @@ extension HomeViewController: UITableViewDataSource {
 extension HomeViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        guard let itemDetailsViewController = UIStoryboard(name: "Details", bundle: nil).instantiateViewController(withIdentifier: "DetailsViewController") as? DetailsViewController else {
+            return
+        }
+        navigationController?.pushViewController(itemDetailsViewController, animated: true)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         242
+    }
+}
+
+// MARK: - TextField Delegate
+
+extension HomeViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == searchField {
+            textField.resignFirstResponder()
+        }
+        
+        return true
     }
 }
 

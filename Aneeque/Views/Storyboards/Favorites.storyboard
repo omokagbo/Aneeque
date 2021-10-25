@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Favorites View Controller-->
+        <!--Favorites-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController storyboardIdentifier="FavoritesViewController" id="Y6W-OH-hqX" customClass="FavoritesViewController" customModule="Aneeque" customModuleProvider="target" sceneMemberID="viewController">
@@ -20,7 +20,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="star.fill" catalog="system" id="mUp-aq-ti9"/>
-                    <navigationItem key="navigationItem" id="fmJ-3k-XfR"/>
+                    <navigationItem key="navigationItem" title="Favorites" largeTitleDisplayMode="always" id="fmJ-3k-XfR"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -32,8 +32,8 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8UH-4g-n9q" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZAS-7y-ZZE">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="ZAS-7y-ZZE">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

@@ -37,7 +37,7 @@
                                             <action selector="didTapLikeButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="uFA-sI-PMt"/>
                                         </connections>
                                     </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chair6" translatesAutoresizingMaskIntoConstraints="NO" id="XzV-8E-0Ev">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chair3" translatesAutoresizingMaskIntoConstraints="NO" id="XzV-8E-0Ev">
                                         <rect key="frame" x="10" y="50" width="100" height="120"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <userDefinedRuntimeAttributes>
@@ -146,11 +146,6 @@
                             <constraint firstItem="Xck-I9-FWO" firstAttribute="leading" secondItem="e79-c1-wq9" secondAttribute="trailing" constant="30" id="wba-iI-ohr"/>
                             <constraint firstItem="bmM-KB-in9" firstAttribute="leading" secondItem="e79-c1-wq9" secondAttribute="trailing" constant="30" id="y05-dG-BMm"/>
                         </constraints>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                <real key="value" value="20"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
                     </view>
                 </subviews>
                 <color key="backgroundColor" red="0.96460121870000004" green="0.96476620440000005" blue="0.96459084750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -163,6 +158,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="containerView" destination="7Sb-31-z7Y" id="dX2-aR-LET"/>
                 <outlet property="itemImage" destination="XzV-8E-0Ev" id="SHW-eV-zG7"/>
                 <outlet property="itemName" destination="NtY-aE-lUh" id="MQS-l8-AgJ"/>
                 <outlet property="likeButton" destination="LRn-vw-Gdx" id="hUs-Ca-paq"/>
@@ -174,7 +170,7 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="chair6" width="3200" height="3200"/>
+        <image name="chair3" width="1200" height="1200"/>
         <image name="heart" catalog="system" width="128" height="109"/>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
