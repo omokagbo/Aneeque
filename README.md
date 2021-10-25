@@ -16,7 +16,7 @@ $ git clone https://github.com/omokagbo/Aneeque.git
 $ cd Aneeque
 ```
 
-Open the file `Aneeque.xcodeproj` using Xcode 
+Open the file `Aneeque.xcodeproj` using Xcode. 
 Allow the project to build and install all dependencies.
 Click on the play button at the top left corner to build and run the project
 
@@ -62,6 +62,4 @@ This is a mockup of the user profile which shows some details about the user
 
 # DEMO
 
-
-
-
+https://user-images.githubusercontent.com/69020285/138739613-7fe7a78e-1541-4e8d-8cc0-395742c353d5.mp4
