@@ -83,7 +83,7 @@ extension CartViewController: ItemTableViewCellDelegate {
     }
     
     func didTapBuyButton() {
-        self.showDefaultAlert(title: "Hurray! 🥳", message: "Item has been added to cart")
+        self.showDefaultAlert(title: "Heeey! 🥳", message: "Item is already in cart")
     }
     
 }

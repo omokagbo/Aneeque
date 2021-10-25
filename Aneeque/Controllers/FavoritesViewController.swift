@@ -80,7 +80,7 @@ extension FavoritesViewController: UITableViewDelegate {
 extension FavoritesViewController: ItemTableViewCellDelegate {
     
     func didTapLikeButton() {
-        self.showDefaultAlert(title: "🤩", message: "Item is already a favorite")
+        self.showDefaultAlert(title: " Yo! 🤩", message: "Item is already a favorite")
     }
     
     func didTapBuyButton() {
