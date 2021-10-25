@@ -14,8 +14,23 @@
 		B41D90A72724DB200045A440 /* AneequeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41D90A62724DB200045A440 /* AneequeTests.swift */; };
 		B41D90B12724DB200045A440 /* AneequeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41D90B02724DB200045A440 /* AneequeUITests.swift */; };
 		B41D90B32724DB200045A440 /* AneequeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41D90B22724DB200045A440 /* AneequeUITestsLaunchTests.swift */; };
-		B41D90C32724E5800045A440 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B41D90C22724E57F0045A440 /* Main.storyboard */; };
-		B41D90C52724E58C0045A440 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41D90C42724E58B0045A440 /* ViewController.swift */; };
+		B41D90C52724E58C0045A440 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41D90C42724E58B0045A440 /* HomeViewController.swift */; };
+		B41D90C92725654E0045A440 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41D90C82725654E0045A440 /* CartViewController.swift */; };
+		B41D90CB272565790045A440 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41D90CA272565790045A440 /* FavoritesViewController.swift */; };
+		B41D90CD272565940045A440 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41D90CC272565940045A440 /* ProfileViewController.swift */; };
+		B41D90D0272566860045A440 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B41D90CF272566860045A440 /* Home.storyboard */; };
+		B41D90D2272566910045A440 /* Cart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B41D90D1272566910045A440 /* Cart.storyboard */; };
+		B41D90D6272566CA0045A440 /* Favorites.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B41D90D5272566CA0045A440 /* Favorites.storyboard */; };
+		B41D90D8272566D80045A440 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B41D90D7272566D80045A440 /* Profile.storyboard */; };
+		B41D90DA27256A4E0045A440 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41D90D927256A4E0045A440 /* BaseTabBarController.swift */; };
+		B41D90E1272574600045A440 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41D90DD272574600045A440 /* UIView+Extension.swift */; };
+		B41D90E2272574600045A440 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41D90DE272574600045A440 /* UIViewController+Extension.swift */; };
+		B41D90E827257BBB0045A440 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41D90E627257BBB0045A440 /* ItemTableViewCell.swift */; };
+		B41D90E927257BBB0045A440 /* ItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B41D90E727257BBB0045A440 /* ItemTableViewCell.xib */; };
+		B41D90EB272618E70045A440 /* Details.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B41D90EA272618E70045A440 /* Details.storyboard */; };
+		B41D90ED272618FC0045A440 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41D90EC272618FC0045A440 /* DetailsViewController.swift */; };
+		B41D90F1272619500045A440 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41D90F0272619500045A440 /* Item.swift */; };
+		B41D90F32726196E0045A440 /* ItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41D90F22726196E0045A440 /* ItemViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +62,23 @@
 		B41D90AC2724DB200045A440 /* AneequeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AneequeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B41D90B02724DB200045A440 /* AneequeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AneequeUITests.swift; sourceTree = "<group>"; };
 		B41D90B22724DB200045A440 /* AneequeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AneequeUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		B41D90C22724E57F0045A440 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		B41D90C42724E58B0045A440 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B41D90C42724E58B0045A440 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B41D90C82725654E0045A440 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		B41D90CA272565790045A440 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		B41D90CC272565940045A440 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		B41D90CF272566860045A440 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		B41D90D1272566910045A440 /* Cart.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Cart.storyboard; sourceTree = "<group>"; };
+		B41D90D5272566CA0045A440 /* Favorites.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Favorites.storyboard; sourceTree = "<group>"; };
+		B41D90D7272566D80045A440 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		B41D90D927256A4E0045A440 /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
+		B41D90DD272574600045A440 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		B41D90DE272574600045A440 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		B41D90E627257BBB0045A440 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		B41D90E727257BBB0045A440 /* ItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTableViewCell.xib; sourceTree = "<group>"; };
+		B41D90EA272618E70045A440 /* Details.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Details.storyboard; sourceTree = "<group>"; };
+		B41D90EC272618FC0045A440 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		B41D90F0272619500045A440 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		B41D90F22726196E0045A440 /* ItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +131,11 @@
 			children = (
 				B41D90BF2724DE6E0045A440 /* App + Scene Delegate */,
 				B41D90C02724DEA20045A440 /* Launch Screen */,
+				B41D90EE272619350045A440 /* Models */,
 				B41D90C72724E5CF0045A440 /* Views */,
+				B41D90EF2726193F0045A440 /* ViewModels */,
 				B41D90C62724E5AE0045A440 /* Controllers */,
+				B41D90DB2725719F0045A440 /* Extensions */,
 				B41D90C12724DEBB0045A440 /* Resources */,
 			);
 			path = Aneeque;
@@ -154,7 +187,12 @@
 		B41D90C62724E5AE0045A440 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B41D90C42724E58B0045A440 /* ViewController.swift */,
+				B41D90D927256A4E0045A440 /* BaseTabBarController.swift */,
+				B41D90C42724E58B0045A440 /* HomeViewController.swift */,
+				B41D90C82725654E0045A440 /* CartViewController.swift */,
+				B41D90CA272565790045A440 /* FavoritesViewController.swift */,
+				B41D90CC272565940045A440 /* ProfileViewController.swift */,
+				B41D90EC272618FC0045A440 /* DetailsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -162,9 +200,56 @@
 		B41D90C72724E5CF0045A440 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				B41D90C22724E57F0045A440 /* Main.storyboard */,
+				B41D90E427257B780045A440 /* Storyboards */,
+				B41D90E527257B920045A440 /* Cells */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		B41D90DB2725719F0045A440 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B41D90DD272574600045A440 /* UIView+Extension.swift */,
+				B41D90DE272574600045A440 /* UIViewController+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B41D90E427257B780045A440 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B41D90CF272566860045A440 /* Home.storyboard */,
+				B41D90D1272566910045A440 /* Cart.storyboard */,
+				B41D90D5272566CA0045A440 /* Favorites.storyboard */,
+				B41D90D7272566D80045A440 /* Profile.storyboard */,
+				B41D90EA272618E70045A440 /* Details.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		B41D90E527257B920045A440 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B41D90E627257BBB0045A440 /* ItemTableViewCell.swift */,
+				B41D90E727257BBB0045A440 /* ItemTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		B41D90EE272619350045A440 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B41D90F0272619500045A440 /* Item.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B41D90EF2726193F0045A440 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B41D90F22726196E0045A440 /* ItemViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,9 +356,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B41D90C32724E5800045A440 /* Main.storyboard in Resources */,
 				B41D909C2724DB200045A440 /* LaunchScreen.storyboard in Resources */,
+				B41D90D6272566CA0045A440 /* Favorites.storyboard in Resources */,
 				B41D90992724DB200045A440 /* Assets.xcassets in Resources */,
+				B41D90D2272566910045A440 /* Cart.storyboard in Resources */,
+				B41D90D8272566D80045A440 /* Profile.storyboard in Resources */,
+				B41D90E927257BBB0045A440 /* ItemTableViewCell.xib in Resources */,
+				B41D90D0272566860045A440 /* Home.storyboard in Resources */,
+				B41D90EB272618E70045A440 /* Details.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,8 +388,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B41D90C52724E58C0045A440 /* ViewController.swift in Sources */,
+				B41D90F32726196E0045A440 /* ItemViewModel.swift in Sources */,
+				B41D90DA27256A4E0045A440 /* BaseTabBarController.swift in Sources */,
+				B41D90CD272565940045A440 /* ProfileViewController.swift in Sources */,
+				B41D90E827257BBB0045A440 /* ItemTableViewCell.swift in Sources */,
+				B41D90ED272618FC0045A440 /* DetailsViewController.swift in Sources */,
+				B41D90F1272619500045A440 /* Item.swift in Sources */,
+				B41D90E1272574600045A440 /* UIView+Extension.swift in Sources */,
+				B41D90C92725654E0045A440 /* CartViewController.swift in Sources */,
+				B41D90C52724E58C0045A440 /* HomeViewController.swift in Sources */,
 				B41D90902724DB1C0045A440 /* AppDelegate.swift in Sources */,
+				B41D90CB272565790045A440 /* FavoritesViewController.swift in Sources */,
+				B41D90E2272574600045A440 /* UIViewController+Extension.swift in Sources */,
 				B41D90922724DB1C0045A440 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -476,7 +576,6 @@
 				INFOPLIST_FILE = Aneeque/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -504,7 +603,6 @@
 				INFOPLIST_FILE = Aneeque/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
