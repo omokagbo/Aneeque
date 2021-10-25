@@ -63,8 +63,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bmM-KB-in9">
-                                <rect key="frame" x="160" y="30" width="72" height="37.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="bmM-KB-in9">
+                                <rect key="frame" x="160" y="30" width="531" height="37.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Irul Chair" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NtY-aE-lUh">
                                         <rect key="frame" x="0.0" y="0.0" width="72" height="20.5"/>
@@ -72,17 +72,17 @@
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="moK-XW-zkd">
-                                        <rect key="frame" x="0.0" y="20.5" width="72" height="17"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="moK-XW-zkd">
+                                        <rect key="frame" x="0.0" y="20.5" width="51" height="17"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Gt-va-mfh" userLabel="by">
-                                                <rect key="frame" x="0.0" y="0.0" width="25" height="17"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Gt-va-mfh" userLabel="by">
+                                                <rect key="frame" x="0.0" y="0.0" width="16" height="17"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Max-ID-mR7">
-                                                <rect key="frame" x="25" y="0.0" width="47" height="17"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seto" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Max-ID-mR7">
+                                                <rect key="frame" x="21" y="0.0" width="30" height="17"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -142,6 +142,7 @@
                             <constraint firstItem="2bV-rn-GzN" firstAttribute="top" secondItem="bmM-KB-in9" secondAttribute="bottom" constant="30" id="bdT-ej-PGE"/>
                             <constraint firstAttribute="trailing" secondItem="2bV-rn-GzN" secondAttribute="trailing" constant="30" id="ehP-DR-wzc"/>
                             <constraint firstItem="e79-c1-wq9" firstAttribute="leading" secondItem="7Sb-31-z7Y" secondAttribute="leading" constant="10" id="jPd-3s-e4k"/>
+                            <constraint firstAttribute="trailing" secondItem="bmM-KB-in9" secondAttribute="trailing" constant="30" id="oaV-4m-gCk"/>
                             <constraint firstAttribute="trailing" secondItem="pS8-tz-EbB" secondAttribute="trailing" constant="30" id="qO6-qH-JAV"/>
                             <constraint firstItem="Xck-I9-FWO" firstAttribute="leading" secondItem="e79-c1-wq9" secondAttribute="trailing" constant="30" id="wba-iI-ohr"/>
                             <constraint firstItem="bmM-KB-in9" firstAttribute="leading" secondItem="e79-c1-wq9" secondAttribute="trailing" constant="30" id="y05-dG-BMm"/>

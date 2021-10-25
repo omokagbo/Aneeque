@@ -33,8 +33,6 @@ class HomeViewController: UIViewController {
     
     private let customColor = UIColor(red: 64/255, green: 59/255, blue: 88/255, alpha: 1)
     
-    private var items = [Item]()
-    
     // MARK: - Outlets
     
     @IBOutlet weak var searchField: UITextField!
@@ -57,6 +55,11 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         setupSearchField()
         setupTableView()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.navigationItem.title = "Best Furniture"
     }
     
     // MARK: - Actions
@@ -178,6 +181,11 @@ extension HomeViewController: UITableViewDelegate {
         guard let itemDetailsViewController = UIStoryboard(name: "Details", bundle: nil).instantiateViewController(withIdentifier: "DetailsViewController") as? DetailsViewController else {
             return
         }
+        
+        itemDetailsViewController.tabBarController?.hidesBottomBarWhenPushed = true
+        
+        itemDetailsViewController.item = itemViewModel.allItems[indexPath.row]
+        
         navigationController?.pushViewController(itemDetailsViewController, animated: true)
     }
     
@@ -203,11 +211,11 @@ extension HomeViewController: UITextFieldDelegate {
 extension HomeViewController: ItemTableViewCellDelegate {
     
     func didTapLikeButton() {
-        print("Like button tapped")
+        self.showDefaultAlert(title: "🤩", message: "Item has been added to favorites")
     }
     
     func didTapBuyButton() {
-        self.showDefaultAlert(title: "Hurray!", message: "Item has been added to cart")
+        self.showDefaultAlert(title: "Hurray! 🥳", message: "Item has been added to cart")
     }
     
 }

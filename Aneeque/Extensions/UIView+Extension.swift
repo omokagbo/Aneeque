@@ -18,6 +18,15 @@ extension UIView {
         }
     }
     
+    @IBInspectable var borderWidth: CGFloat {
+        get {
+            return self.borderWidth
+        }
+        set {
+            self.layer.borderWidth = newValue
+        }
+    }
+    
     public func createCardView(viewName: UIView) {
        viewName.backgroundColor = .white
        viewName.layer.cornerRadius = 20.0

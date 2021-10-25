@@ -16,12 +16,27 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="SUw-bc-R0S">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SUw-bc-R0S" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="LOd-Ug-0Ka"/>
+                            <constraint firstAttribute="bottom" secondItem="SUw-bc-R0S" secondAttribute="bottom" id="UOV-hk-3ty"/>
+                            <constraint firstItem="SUw-bc-R0S" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="n1Z-nW-nDC"/>
+                            <constraint firstAttribute="trailing" secondItem="SUw-bc-R0S" secondAttribute="trailing" id="o1k-e7-F2R"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="bag.fill" catalog="system" id="du2-W4-fBC"/>
                     <navigationItem key="navigationItem" title="Cart" largeTitleDisplayMode="always" id="heO-FY-NOl"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="cartTableView" destination="SUw-bc-R0S" id="ano-rB-Atw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

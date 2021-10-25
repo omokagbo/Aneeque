@@ -69,10 +69,6 @@ class ItemTableViewCell: UITableViewCell {
     
     // MARK: - Methods
     
-    public func nib() -> UINib {
-        return UINib(nibName: "ItemTableViewCell", bundle: nil)
-    }
-    
     public func setup(with model: Item) {
         itemImage.image = UIImage(named: model.itemImage)
         itemName.text = model.itemName

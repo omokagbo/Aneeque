@@ -23,4 +23,19 @@ class ItemViewModel {
         Item(itemImage: "floor3", itemName: "Helium Floor", itemSeller: "Emar", itemDescription: "Ergonomical for humans body curve", itemPrice: "$212."),
     ]
     
+    let cartItems = [
+        Item(itemImage: "chair1", itemName: "Hydrogen Chair", itemSeller: "Emar", itemDescription: "Ergonomical for humans body curve", itemPrice: "$102."),
+        Item(itemImage: "table2", itemName: "Oxygen Table", itemSeller: "Emar", itemDescription: "Ergonomical for humans body curve", itemPrice: "$102."),
+        Item(itemImage: "lamp3", itemName: "Helium Lamp", itemSeller: "Emar", itemDescription: "Ergonomical for humans body curve", itemPrice: "$28."),
+        Item(itemImage: "floor1", itemName: "Hydrogen Floor", itemSeller: "Emar", itemDescription: "Ergonomical for humans body curve", itemPrice: "$299."),
+        Item(itemImage: "floor2", itemName: "Oxygen Floor", itemSeller: "Emar", itemDescription: "Ergonomical for humans body curve", itemPrice: "$327."),
+        Item(itemImage: "floor3", itemName: "Helium Floor", itemSeller: "Emar", itemDescription: "Ergonomical for humans body curve", itemPrice: "$212.")
+    ]
+    
+    let favoriteItems = [
+        Item(itemImage: "floor1", itemName: "Hydrogen Floor", itemSeller: "Emar", itemDescription: "Ergonomical for humans body curve", itemPrice: "$299."),
+        Item(itemImage: "floor2", itemName: "Oxygen Floor", itemSeller: "Emar", itemDescription: "Ergonomical for humans body curve", itemPrice: "$327."),
+        Item(itemImage: "floor3", itemName: "Helium Floor", itemSeller: "Emar", itemDescription: "Ergonomical for humans body curve", itemPrice: "$212.")
+    ]
+    
 }

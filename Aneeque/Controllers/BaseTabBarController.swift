@@ -25,9 +25,6 @@ class BaseTabBarController: UITabBarController, UITabBarControllerDelegate {
         let fourthTabBar = UIStoryboard(name: "Profile", bundle: nil).instantiateViewController(withIdentifier: "ProfileViewController")
         
         firstTabBar.navigationItem.largeTitleDisplayMode = .always
-        secondTabBar.navigationItem.largeTitleDisplayMode = .always
-        thirdTabBar.navigationItem.largeTitleDisplayMode = .always
-        fourthTabBar.navigationItem.largeTitleDisplayMode = .always
         
         let firstNavBar = UINavigationController(rootViewController: firstTabBar)
         let secondNavBar = UINavigationController(rootViewController: secondTabBar)
